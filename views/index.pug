@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  h1= title
+  p(id="activeplayer") #{player}
+  div
+    table(class='board-container', id='board')
+      each row,i in board
+        tr(id=i)
+          each item,j in row
+            td(class='cell',id=j)=  item
+  
+  form(method='get', action="/reset")
+    input(type="submit", value="RESET")

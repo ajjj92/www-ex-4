@@ -2,12 +2,16 @@
   "name": "node-js",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/index.js localhost 8080"
+    "start": "nodemon ./server.js"
   },
   "dependencies": {
-    "express": "4.16.4"
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "mongodb": "3.5.9",
+    "nodemon": "2.0.4",
+    "pug": "3.0.0"
   },
   "keywords": []
 }
