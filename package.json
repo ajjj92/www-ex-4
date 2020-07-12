@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {"start": "./node_modules/parcel-bundler/bin/cli.js server.js --port 8080","build": "parcel build server.js"},
+  "scripts": {"start": "node server.js"},
   "dependencies": {
     "body-parser": "1.19.0",
     "express": "4.17.1",
     "mongodb": "3.5.9",
     "nodemon": "2.0.4",
-    "pug": "3.0.0",
-    "parcel-bundler": "^1.6.1"
+    "pug": "3.0.0"
   },
   "keywords": []
 }
