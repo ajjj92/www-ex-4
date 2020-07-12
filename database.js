@@ -1,5 +1,6 @@
 const MongoClient = require("mongodb").MongoClient;
-const url = process.env.MONGO;
+const url = "mongodb+srv://admin:juustonaksu@cluster0.jjndj.azure.mongodb.net/test?retryWrites=true&w=majority";
+
 class dbController {
   constructor() {
     this.updateDb = function(query, newData) {
